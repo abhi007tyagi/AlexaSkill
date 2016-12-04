@@ -1,0 +1,32 @@
+{
+  "intents": [
+    {
+      "intent": "AskQuestionIntent",
+      "slots": [
+        {
+          "name": "question",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "ContinueIntent",
+      "slots": [
+        {
+          "name": "choice",
+          "type": "OPTIONS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}
+
+OPTIONS yes | yeah | haa | ok | yup | no | naa | naah | nahi
+
+AskQuestionIntent {who is|question}
+AskQuestionIntent {who is abhinav|question}
+AskQuestionIntent {who is abhinav tyagi|question}
+ContinueIntent {choice}
